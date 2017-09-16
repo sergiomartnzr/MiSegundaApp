@@ -18,6 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+//On press and release action the label text will change to "Mentira!"
+- (IBAction)changeButtonPressed:(id)sender {
+    self.lbWelcome.text = @"Mentira";
+}
 
 
 - (void)didReceiveMemoryWarning {
