@@ -12,5 +12,22 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lbWelcome;
 
+@property (strong, nonatomic) IBOutlet UILabel *lbColor;
+@property (strong, nonatomic) IBOutlet UILabel *lbRed;
+@property (strong, nonatomic) IBOutlet UILabel *lbGreen;
+@property (strong, nonatomic) IBOutlet UILabel *lbBlue;
+@property (strong, nonatomic) IBOutlet UILabel *lbAlpha;
+
+@property (strong, nonatomic) IBOutlet UITextField *txtColor;
+
+@property (strong, nonatomic) IBOutlet UISlider *slRed;
+@property (strong, nonatomic) IBOutlet UISlider *slGreen;
+@property (strong, nonatomic) IBOutlet UISlider *slBlue;
+@property (strong, nonatomic) IBOutlet UISlider *slAlpha;
+
+- (IBAction)changeGreen:(id)sender;
+- (IBAction)changeBlue:(id)sender;
+- (IBAction)changeRed:(id)sender;
+- (IBAction)changeAlpha:(id)sender;
 @end
 
