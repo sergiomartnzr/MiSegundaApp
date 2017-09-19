@@ -157,8 +157,17 @@ void setColor(int rcol,int gcol,int bcol, float al){
         self.lbColor.hidden = false;
     } else {
         self.lbColor.hidden = true;
-    }}
+    }
+}
 
+- (IBAction)setRandomColor:(id)sender {
+    rcolor = arc4random() % 254;
+    gcolor = arc4random() % 254;
+    bcolor = arc4random() % 254;
+    alpha = arc4random() % 254;
+    setColor(rcolor, gcolor, bcolor, alpha);
+    self.lbColor.backgroundColor=color;
+}
 
 
 @end
