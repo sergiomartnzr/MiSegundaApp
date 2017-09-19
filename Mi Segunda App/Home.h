@@ -25,9 +25,13 @@
 @property (strong, nonatomic) IBOutlet UISlider *slBlue;
 @property (strong, nonatomic) IBOutlet UISlider *slAlpha;
 
+@property (weak, nonatomic) IBOutlet UISwitch *swShowHide;
+
+
 - (IBAction)changeGreen:(id)sender;
 - (IBAction)changeBlue:(id)sender;
 - (IBAction)changeRed:(id)sender;
 - (IBAction)changeAlpha:(id)sender;
+
 @end
 

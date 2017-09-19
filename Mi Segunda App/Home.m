@@ -44,6 +44,9 @@ NSArray *labelColors;
 
     _lbColor.layer.cornerRadius = CGRectGetWidth(_lbColor.frame)/2;
     _lbColor.layer.masksToBounds = true;
+    
+
+    
     [self refreshColor];
 }
 
@@ -148,5 +151,14 @@ void setColor(int rcol,int gcol,int bcol, float al){
 - (IBAction)changeBlue:(id)sender {
     [self refreshColor];
 }
+- (IBAction)hideColorPanel:(id)sender {
+    UISwitch *mySwitch = (UISwitch *)sender;
+    if ([mySwitch isOn]) {
+        self.lbColor.hidden = false;
+    } else {
+        self.lbColor.hidden = true;
+    }}
+
+
 
 @end
