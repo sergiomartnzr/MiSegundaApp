@@ -169,5 +169,25 @@ void setColor(int rcol,int gcol,int bcol, float al){
     self.lbColor.backgroundColor=color;
 }
 
+- (IBAction)showAlert:(id)sender {
+    UIAlertController * alert;
+    if(self.swShowHide.isOn){
+        alert = [UIAlertController
+                alertControllerWithTitle:@"Alert"
+                message:[NSString stringWithFormat:@"%@%@%@",self.NombreText.text,self.TelefonoText.text,self.txtColor.text]
+                preferredStyle:UIAlertControllerStyleAlert];
+    }else{
+       alert = [UIAlertController
+                                     alertControllerWithTitle:@"Alert"
+                                     message:@"No hay Circulo"
+                                     preferredStyle:UIAlertControllerStyleAlert];
+    }
+    
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        
+    }];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end

@@ -27,6 +27,9 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *swShowHide;
 
+@property (weak, nonatomic) IBOutlet UITextField *NombreText;
+@property (weak, nonatomic) IBOutlet UITextField *TelefonoText;
+@property (weak, nonatomic) IBOutlet UIButton *alertaButton;
 
 - (IBAction)changeGreen:(id)sender;
 - (IBAction)changeBlue:(id)sender;

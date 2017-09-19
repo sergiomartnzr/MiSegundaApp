@@ -128,10 +128,10 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aXn-vM-NW4">
-                                <rect key="frame" x="12" y="530" width="174" height="50"/>
+                                <rect key="frame" x="178" y="453" width="174" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.1927646482" blue="0.2270471054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Buton de la suerte">
+                                <state key="normal" title="Boton de la suerte">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -139,10 +139,38 @@
                                     <action selector="setRandomColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPF-pR-ckc"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" id="jya-gM-zj3">
+                                <rect key="frame" x="16" y="520" width="336" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefono" textAlignment="natural" minimumFontSize="17" id="suH-jV-3Mo">
+                                <rect key="frame" x="16" y="558" width="336" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t4l-kz-r1C">
+                                <rect key="frame" x="261" y="596" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88235723300946534" green="0.9331282383419689" blue="0.091886213603156963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Alerta">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EeT-Xk-Fq7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="NombreText" destination="jya-gM-zj3" id="xeG-I1-TVz"/>
+                        <outlet property="TelefonoText" destination="suH-jV-3Mo" id="kd0-pt-wdH"/>
+                        <outlet property="alertaButton" destination="t4l-kz-r1C" id="GKf-QU-vNY"/>
                         <outlet property="lbAlpha" destination="JP4-2q-9Ve" id="bBg-Zk-dL9"/>
                         <outlet property="lbBlue" destination="BYa-TE-9tj" id="P5v-Pf-e1T"/>
                         <outlet property="lbColor" destination="hIe-Nb-ppp" id="nuI-I2-mog"/>
