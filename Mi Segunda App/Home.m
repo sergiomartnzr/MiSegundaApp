@@ -41,6 +41,9 @@ NSArray *labelColors;
 
 //This function is executed on view load
 - (void)viewDidLoad {
+
+    _lbColor.layer.cornerRadius = CGRectGetWidth(_lbColor.frame)/2;
+    _lbColor.layer.masksToBounds = true;
     [self refreshColor];
 }
 
