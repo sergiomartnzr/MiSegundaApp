@@ -182,6 +182,7 @@ void setColor(int rcol,int gcol,int bcol, float al){
                                      message:@"No hay Circulo"
                                      preferredStyle:UIAlertControllerStyleAlert];
     }
+    //
     
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
         
